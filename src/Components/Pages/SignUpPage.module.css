@@ -1,0 +1,393 @@
+.firstPartSign {
+  background-color: #27084a;
+  min-height: 100vh;
+  width: 43vw;
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7.2vw;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.bigBall {
+  position: absolute;
+  transform: translate(-10%, -20%);
+  top: 0%;
+  right: 90%;
+  width: 5.5vw;
+  z-index: -1;
+}
+
+.ball1 {
+  position: absolute;
+  transform: translate(90%, 40%);
+  top: 5%;
+  right: 50%;
+  width: 2.2vw;
+  z-index: -1;
+}
+
+.ball2 {
+  position: absolute;
+  transform: translate(90%, 40%);
+  top: 18%;
+  right: 80%;
+  width: 2vw;
+  z-index: -1;
+}
+
+.ball3 {
+  position: absolute;
+  transform: translate(90%, 25%);
+  top: 18%;
+  right: 22%;
+  width: 2vw;
+  z-index: -1;
+}
+
+.ball4 {
+  position: absolute;
+  transform: translate(50%, 50%);
+  top: 68%;
+  right: 70%;
+  width: 1.5vw;
+  z-index: -1;
+}
+
+.ball5 {
+  position: absolute;
+  transform: translate(90%, 25%);
+  top: 90%;
+  right: 35%;
+  width: 2vw;
+  z-index: -1;
+}
+
+.ball6 {
+  position: absolute;
+  transform: translate(90%, 25%);
+  top: 85%;
+  right: 85%;
+  width: 2.1vw;
+  z-index: -1;
+}
+
+.ball7 {
+  position: absolute;
+  transform: translate(90%, 25%);
+  top: 68%;
+  right: 35%;
+  width: 2vw;
+  z-index: -1;
+}
+
+.firstPartSign::after {
+  content: "";
+  top: 50%;
+  right: 30%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background: radial-gradient(
+    31.71% 44.15% at 44.72% 74.9%,
+    rgba(19, 74, 121, 0.76) 10.94%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+  transform: rotate(90deg);
+}
+
+.firstPartSign::before {
+  content: "";
+  top: -20%;
+  left: -25%;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(127, 9, 135, 0.504) 0%,
+    rgba(172, 172, 172, 0) 100%
+  );
+  transform: rotate(230deg);
+}
+
+.signText1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #e1d6e9;
+  z-index: 1;
+}
+
+.signText2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #e1d6e9;
+  text-align: center;
+  z-index: 1;
+}
+
+.getItNow {
+  font-size: 4rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.logInBtn {
+  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9vw;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8vw 3.2vw;
+  transition: all 0.5s;
+  background-image: linear-gradient(
+    90deg,
+    #64a0c3 0%,
+    rgba(149, 22, 107, 0.529) 111.38%
+  );
+}
+
+.logInBtn:hover {
+  box-shadow: 0 0 0 8px rgba(142, 141, 141, 0.14);
+  transform: translateY(-0.5rem);
+}
+
+.signTextArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.signTextArea::after {
+  content: "";
+  top: -10%;
+  right: -17%;
+  width: 90%;
+  height: 70%;
+  z-index: -1;
+  position: absolute;
+
+  background: radial-gradient(
+    31.71% 44.15% at 44.72% 74.9%,
+    rgba(19, 74, 121, 0.76) 10.94%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+  transform: rotate(-140deg);
+}
+
+.logoTextArea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 27rem;
+  margin-bottom: 3rem;
+  text-decoration: none !important;
+}
+
+.theLogo {
+  width: 3.5vw;
+  transition: all 3s;
+}
+
+.theLogo:hover {
+  transform: rotate(-900deg);
+}
+
+.logoText {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.7rem;
+}
+
+/*** Container **/
+
+.signUpSection {
+  overflow: hidden;
+}
+
+.signUpContainer {
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+/*** Second Part ***/
+
+.signHeading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #290f45 0%, #d0178f 109%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.signUpLables {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #050505;
+}
+
+.signUpInput {
+  border: none;
+  border-bottom: 1px solid #d7d7d7;
+  padding-bottom: 0.6rem;
+  width: 30vw;
+  transition: all 0.2s;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+}
+
+.signUpInput:focus {
+  outline: none;
+  border-bottom: 2px solid #6b21a8;
+}
+
+.signUpInput::placeholder {
+  color: #c8c8c8;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.emailArea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.signUpIcons {
+  width: 1.3vw;
+  transform: translate(-2rem, -0.5rem);
+}
+
+.wholeInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+
+.submitBtn {
+  border: none;
+  background-color: none;
+  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(90deg, #64a0c3 0%, #27084a 111.38%);
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2vw;
+  margin-left: 10.4vw;
+  max-width: 10vw;
+  padding: 0.8vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.submitBtn:hover {
+  box-shadow: 0 0 0 8px rgba(142, 141, 141, 0.31);
+  transform: translateY(-0.5rem);
+}
+
+/** Quries **/
+
+@media (min-width: 100em) {
+  .signText1 {
+    font-size: 2vw;
+  }
+
+  .signText2 {
+    font-size: 1.2vw;
+  }
+
+  .getItNow {
+    font-size: 2.5vw;
+    font-weight: 700;
+  }
+
+  .logInBtn {
+    font-size: 0.9vw;
+    padding: 0.8vw 3.2vw;
+  }
+
+  .logoTextArea {
+    gap: 1rem;
+    margin-top: 40rem;
+    margin-bottom: 2vw;
+  }
+
+  .logoText {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 95em) {
+  .signText1 {
+    font-size: 2.4vw;
+  }
+
+  .signText2 {
+    font-size: 1.4vw;
+  }
+
+  .getItNow {
+    font-size: 3vw;
+    font-weight: 700;
+  }
+
+  .logInBtn {
+    font-size: 1.2vw;
+  }
+
+  .logoText {
+    font-size: 2.2vw;
+  }
+
+  .logoTextArea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    margin-top: 30rem !important;
+    margin-bottom: 1.6vw;
+  }
+
+  .signUpContainer {
+    display: flex;
+    gap: 15vw;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+
+  .signHeading {
+    font-size: 3vw;
+  }
+}

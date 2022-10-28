@@ -1,0 +1,607 @@
+.mainHeaderResult {
+  background-color: #27084a;
+  min-height: 22vw;
+  box-shadow: 0px 5px 15px 9px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mainHeaderResult::after {
+  content: "";
+  bottom: 60%;
+  right: -3%;
+  width: 30%;
+  z-index: -1;
+  height: 50%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(127, 9, 135, 0.492) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.mainHeaderResult::before {
+  content: "";
+  bottom: 0%;
+  right: 25%;
+  width: 60%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(127, 9, 135, 0.715) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.firstSection {
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+.ball1 {
+  position: absolute;
+  width: 1.2vw;
+  top: 80%;
+  right: 75%;
+  transform: translate(28%, 90%);
+}
+
+.ball2 {
+  position: absolute;
+  top: 45%;
+  right: 22%;
+  transform: translate(0%, 90%);
+  width: 1.4vw;
+}
+
+.ball4 {
+  position: absolute;
+  top: 24%;
+  right: 80%;
+  transform: translate(0%, 100%);
+  width: 2.3vw;
+  transition: all 3s;
+  z-index: 1;
+}
+
+.ball5 {
+  position: absolute;
+  top: 60%;
+  right: 90%;
+  z-index: 1;
+  width: 1.7vw;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball6 {
+  position: absolute;
+  top: 80%;
+  right: 25%;
+  width: 1.5vw;
+  z-index: 1;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball8 {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  transform: translate(0%, 100%);
+  width: 2vw;
+}
+
+.ball9 {
+  position: absolute;
+  top: 70%;
+  right: 42%;
+  transform: translate(0%, 100%);
+  width: 2.2vw;
+  transition: all 3s;
+  z-index: 1;
+}
+
+.ball10 {
+  position: absolute;
+  top: 20%;
+  right: 60%;
+  transform: translate(0%, 100%);
+  width: 2vw;
+}
+
+.newsHeading {
+  margin-top: 7.5rem;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #e1d6e9;
+}
+
+.headingArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headingArea::after {
+  content: "";
+  bottom: -22%;
+  right: 40%;
+  width: 100%;
+  z-index: -1;
+  height: 130%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(19, 73, 121, 0.54) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.headingArea::before {
+  content: "";
+  bottom: -75%;
+  right: -35%;
+  width: 100%;
+  z-index: -1;
+  height: 130%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(19, 73, 121, 0.567) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.paymentContainer {
+  gap: 2rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 130rem;
+  position: relative;
+  align-items: flex-start;
+  padding: 0rem 6rem 0rem 6rem;
+}
+
+.paymentWindow {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  background-color: #fafafa;
+  border-radius: 18px;
+  height: 40vw;
+  width: 60vw;
+}
+
+.clientData {
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  background-color: #fafafa;
+  border-radius: 18px;
+  height: 25vw;
+  width: 21vw;
+}
+
+.inputLabelArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.userLable {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #8b8b8b;
+}
+
+.dataInput {
+  border: none;
+  background-color: transparent;
+  font-size: 1.37rem;
+  color: #8b8b8b;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 1px solid #8b8b8b89;
+  padding-bottom: 0.5rem;
+  max-width: 11.5vw;
+}
+
+.dataInput:focus {
+  outline: none;
+  border-bottom: 1.2px solid #732ac8;
+}
+
+.dataInput::placeholder {
+  font-family: "Inter", sans-serif;
+  color: #8b8b8bf0;
+}
+
+.userEditBtn {
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.4vw 1vw;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+  background: linear-gradient(
+    90deg,
+    rgba(233, 70, 179, 0.63) 3.25%,
+    rgba(57, 15, 103, 0.63) 89.92%
+  );
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.userEditBtn:hover {
+  transform: translateY(-3px);
+}
+
+.wholeUserInput {
+  margin-top: 4vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.3rem;
+}
+
+.clientData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Second Section*/
+
+.secondSection {
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.secondSection::after {
+  content: "";
+  top: 5%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #aad4f0 0%,
+    rgba(187, 227, 255, 0) 100%
+  );
+}
+
+.secondSection::before {
+  content: "";
+  bottom: 35%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    #bea5cd 8.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+/** Media Quries **/
+
+/** Big Labtops **/
+@media (min-width: 128em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 103em) {
+  html {
+    font-size: 66%;
+  }
+
+  .ball2 {
+    top: 40%;
+    right: 26%;
+    transform: translate(0%, 90%);
+    width: 1.4vw;
+  }
+
+  .ball4 {
+    top: 4%;
+    right: 75.5%;
+    transform: translate(0%, 100%);
+    width: 2.3vw;
+  }
+}
+
+/****/
+
+/** Small Labtops **/
+
+@media (max-width: 87em) {
+}
+
+@media (max-width: 80em) {
+  .newsHeading {
+    margin-top: 4vw;
+    font-size: 4.7vw;
+  }
+}
+
+/** 1152 px **/
+
+@media (max-width: 74em) {
+  .userLable {
+    font-size: 1.2vw;
+  }
+
+  .dataInput {
+    font-size: 1.1vw;
+    max-width: 10vw;
+  }
+  .userEditBtn {
+    font-size: 1vw;
+  }
+
+  .handPhone {
+    bottom: 31.5%;
+  }
+
+  .wholeUserInput {
+    margin-top: 3vw;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.3rem;
+  }
+
+  .ball1 {
+    top: 75.6%;
+  }
+
+  .ball2 {
+    top: 32%;
+  }
+
+  .ball3 {
+    top: 14.5%;
+  }
+}
+
+/****/
+
+/** 1024 **/
+
+@media (max-width: 64em) {
+}
+
+/** 962 px **/
+
+@media (max-width: 60em) {
+  .newsHeading {
+    margin-top: 2.8vw;
+    font-size: 4vw;
+  }
+}
+
+/** 800 px **/
+
+@media (max-width: 50em) {
+  .newsHeading {
+    margin-top: 2vw;
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 48em) {
+  .newsHeading {
+    margin-top: 1vw;
+    font-size: 3.3vw;
+  }
+}
+
+/** 600 px **/
+
+@media (max-width: 37.5em) {
+  .ball1 {
+    top: 84%;
+  }
+
+  .ball2 {
+    top: 49%;
+  }
+
+  .ball3 {
+    top: 35%;
+  }
+
+  .ball4 {
+    top: 15%;
+  }
+
+  .ball5 {
+    top: 87%;
+  }
+}
+
+/******** Quries for all phonse ********/
+/******** Quries for all phonse ********/
+
+/** 512x896 Big phones **/
+@media (max-width: 32em) {
+  .mainHeaderResult {
+    min-height: 80vw;
+  }
+
+  .newsHeading {
+    margin-top: 30vw;
+    font-size: 9vw;
+  }
+
+  .ball1 {
+    width: 7.2vw;
+    top: 21%;
+    right: 15%;
+  }
+
+  .ball2 {
+    top: 33%;
+    right: 75%;
+    width: 5.2vw;
+  }
+
+  .ball3 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ball4 {
+    top: 75%;
+    right: 60%;
+    width: 5.7vw;
+  }
+
+  .ball6 {
+    top: 75%;
+    right: 10%;
+    width: 5vw;
+  }
+
+  .ball8 {
+    top: 30%;
+    right: 40%;
+    width: 5vw;
+  }
+
+  .ball9 {
+    top: 65%;
+    right: 40%;
+    width: 3vw;
+  }
+
+  .ball10 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ball5 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .paymentContainer {
+    gap: 3rem;
+    display: flex;
+    max-width: unset !important;
+    align-items: center !important;
+    flex-direction: column;
+    padding: 0rem 2rem 0rem 2rem !important;
+  }
+
+  .paymentWindow {
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    background-color: #fafafa;
+    border-radius: 18px;
+    height: 100vw;
+    width: 90vw;
+  }
+
+  .clientData {
+    height: 72vw;
+    width: 60vw;
+  }
+
+  .inputLabelArea {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .userLable {
+    font-size: 3vw;
+  }
+
+  .dataInput {
+    font-size: 2.5vw;
+    border-bottom: 1px solid #8b8b8b89;
+    padding-bottom: 0.5rem;
+    max-width: 60vw;
+  }
+
+  .userEditBtn {
+    font-size: 2vw;
+    padding: 0.6vw 2vw;
+    margin-bottom: -1vw;
+    border-radius: 4px;
+  }
+
+  .wholeUserInput {
+    margin-top: 10vw;
+    gap: 1.5rem;
+  }
+}
+
+/** 414 **/
+
+@media (max-width: 26em) {
+  /* .ball2 {
+    top: 28%;
+    right: 12%;
+    width: 6.2vw;
+  } */
+}
+
+/*** 390 **/
+
+@media (max-width: 25em) {
+  /* .ball4 {
+    top: 88%;
+  } */
+}
+
+/** 375 **/
+
+@media (max-width: 24.5em) {
+  /* .ball4 {
+    top: 91%;
+  } */
+}
+
+/** 360 **/
+
+@media (max-width: 22.5em) {
+  /* .ball4 {
+    top: 88%;
+  }
+
+  .ball2 {
+    top: 23%;
+  } */
+}
+
+/** 320px **/
+
+@media (max-width: 22.5em) {
+  /* .ball1 {
+    top: 13%;
+  }
+
+  .ball4 {
+    top: 90%;
+  } */
+}

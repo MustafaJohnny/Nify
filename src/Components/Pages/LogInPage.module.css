@@ -1,0 +1,94 @@
+.LogInText1 {
+  font-size: 3.8rem;
+}
+
+.LogInText2 {
+  font-size: 1.5rem;
+}
+
+.LogInBtnPage {
+  font-size: 1vw;
+  padding: 0.7vw 1.5vw;
+}
+
+.checkedText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6666ab;
+}
+
+.getItNow {
+  text-align: center;
+  font-weight: 700;
+}
+
+.checkboxLogin {
+  accent-color: #6666ab;
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.TextAreaGet {
+  gap: 0rem !important;
+}
+
+.checkedArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.wholeInputCheck {
+  display: flex;
+  align-items: flex-start;
+  gap: 21.5rem;
+  gap: 14vw;
+}
+
+.forgotLink {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6666ab;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.forgotLink:hover {
+  transform: translateY(-2px);
+}
+
+.rememberCheck {
+  position: relative;
+}
+
+@media (min-width: 125em) {
+  .wholeInputCheck {
+    gap: 18vw;
+  }
+}
+
+@media (max-width: 69em) {
+  .wholeInputCheck {
+    gap: 9vw;
+  }
+
+  .checkedText {
+    font-size: 1.2rem;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #6666ab;
+  }
+  .forgotLink {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #6666ab;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+}

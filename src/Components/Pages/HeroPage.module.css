@@ -1,0 +1,2373 @@
+.mainHeader {
+  background-color: #27084a;
+  min-height: 34vw;
+  box-shadow: 0px 5px 15px 9px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 0;
+  position: relative;
+}
+
+.mainHeader::after {
+  content: "";
+  top: 60%;
+  right: 74%;
+  width: 20%;
+  height: 30%;
+  z-index: -1;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(19, 74, 121, 0.76) 0%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+}
+
+.mainHeader::before {
+  content: "";
+  top: -8%;
+  right: 74%;
+  width: 40%;
+  height: 80%;
+  z-index: -1;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(127, 9, 135, 0.612) 0%,
+    rgba(172, 172, 172, 0) 100%
+  );
+  transform: rotate(300deg);
+}
+
+.handPhone {
+  position: absolute;
+  width: 20vw;
+  transform: translate(50%, 50%);
+  bottom: 35.5%;
+  right: 34%;
+}
+
+.circle1 {
+  position: absolute;
+  transform: translate(100%, 10%);
+  top: 18%;
+  right: 48.9%;
+  width: 23.3vw;
+}
+
+.circle2 {
+  position: absolute;
+  transform: translate(86.5%, 8%);
+  top: 5%;
+  right: 49%;
+  width: 32.2vw;
+}
+
+.firstSection {
+  padding-bottom: 5.5rem;
+}
+
+.ball1 {
+  position: absolute;
+  width: 1vw;
+  top: 80%;
+  right: 45%;
+  transform: translate(28%, 90%);
+}
+
+.ball2 {
+  position: absolute;
+  top: 30%;
+  right: 28%;
+  transform: translate(0%, 90%);
+  width: 1.4vw;
+}
+
+.ball3 {
+  position: absolute;
+  top: 11.6%;
+  right: 45%;
+  transform: translate(0%, 100%);
+  width: 2vw;
+}
+
+.ball4 {
+  position: absolute;
+  top: 8%;
+  right: 75.5%;
+  transform: translate(0%, 100%);
+  width: 2.3vw;
+  transition: all 3s;
+  z-index: 1;
+}
+
+.ball4:hover {
+  transform: rotate(360deg) translate(32.5vw, 6.8vw);
+}
+
+.ball5 {
+  position: absolute;
+  top: 80%;
+  right: 61%;
+  z-index: 1;
+  width: 1.7vw;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball5:hover {
+  transform: rotate(355deg) translate(35vw, -18vw);
+}
+
+.ball6 {
+  position: absolute;
+  top: 80%;
+  right: 16%;
+  width: 1.2vw;
+  z-index: 1;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball6:hover {
+  transform: translateX(-11.7vw);
+}
+
+.headingSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroHeading {
+  font-weight: 700;
+  font-size: 4vw;
+  font-size: 6rem;
+  line-height: 7rem;
+  color: #e1d6e9;
+}
+
+.nifyText {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #e1d6e9;
+}
+
+.heroTextButton {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.twoButton {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.heroButton {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  padding: 1.2rem 1.4rem;
+  font-family: "Inter", sans-serif;
+  background-image: linear-gradient(90deg, #e946b3 11.71%, #43b6c6 118.29%);
+  transition: all 0.5s !important;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.249));
+}
+
+.heroButton:hover {
+  box-shadow: 0 0 0 8px rgba(142, 141, 141, 0.14);
+  transform: translateY(-0.5rem);
+}
+
+.heroButton2 {
+  transition: all 0.5s !important;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.249));
+  background-image: linear-gradient(
+    90deg,
+    #64a0c3 0%,
+    rgba(233, 70, 179, 0) 111.38%
+  );
+}
+
+.downloadText {
+  font-weight: 600;
+  font-size: 3.3rem;
+  line-height: 3.7rem;
+  color: #e1d6e9;
+}
+
+.storesArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 9rem;
+}
+
+.storesIcon {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.storesIcon:hover {
+  transform: translateY(-2px);
+}
+
+.heroContent {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  align-items: center;
+  padding: 6rem 4rem 6rem 4rem;
+  position: relative;
+}
+
+.heroContent::after {
+  content: "";
+  bottom: 78%;
+  left: 70%;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  position: absolute;
+  transform: rotate(360deg);
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(19, 74, 121, 0.76) 0%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+}
+
+.heroContent::before {
+  content: "";
+  top: 10%;
+  left: 45%;
+  width: 43%;
+  height: 80%;
+  z-index: -1;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(127, 9, 135, 0.504) 0%,
+    rgba(172, 172, 172, 0) 100%
+  );
+  transform: rotate(350deg);
+}
+
+.nifyArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.downArea {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.heroDownload {
+  gap: 2rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+/*Second Section*/
+
+.secondSection {
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.secondSection::after {
+  content: "";
+  top: 5%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #aad4f0 0%,
+    rgba(187, 227, 255, 0) 100%
+  );
+}
+
+.secondSection::before {
+  content: "";
+  bottom: 35%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    #bea5cd 8.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.secondPageLinks {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-right: 6rem;
+}
+
+.secondPlink {
+  text-decoration: none;
+  font-size: 1.65rem;
+  color: #171717;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 0.7rem;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.secondPlink:hover {
+  border-bottom: 3px solid #6666ab;
+  border-radius: 0.5px;
+}
+
+.areaETH {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 130rem;
+  padding: 0rem 4rem 0 4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 5.5rem;
+  position: relative;
+}
+
+.areaETH::after {
+  content: "";
+  top: 10%;
+  left: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #aad4f0 0%,
+    rgba(187, 227, 255, 0) 100%
+  );
+}
+
+.areaETH::before {
+  content: "";
+  top: 55%;
+  left: 38%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #ff93d8 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.photoETH {
+  background-image: linear-gradient(
+      0deg,
+      #f896cf 16.31%,
+      rgba(217, 217, 217, 0) 117.2%
+    ),
+    url("../Icons/ETHphoto.png");
+  background-size: cover;
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.25));
+  display: inline-block;
+  height: 16vw;
+  width: 100%;
+  width: 14.6vw;
+  border-radius: 8px;
+  background-color: rgba(203, 197, 197, 0.307);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 9rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.photoETH:hover {
+  transform: translateY(-6px);
+}
+
+.photoETH2 {
+  background-image: linear-gradient(
+      0deg,
+      #96dbf8 16.31%,
+      rgba(217, 217, 217, 0) 117.2%
+    ),
+    url("../Icons/ETHphoto.png");
+}
+
+.photoETH3 {
+  background-image: linear-gradient(
+      0deg,
+      #f89696 16.31%,
+      rgba(217, 217, 217, 0) 117.2%
+    ),
+    url("../Icons/ETHphoto.png");
+}
+
+.photoETH4 {
+  background-image: linear-gradient(
+      0deg,
+      #a496f8 16.31%,
+      rgba(217, 217, 217, 0) 117.2%
+    ),
+    url("../Icons/ETHphoto.png");
+}
+
+.photoETH5 {
+  background-image: linear-gradient(
+      0deg,
+      #f8ee96 16.31%,
+      rgba(217, 217, 217, 0) 117.2%
+    ),
+    url("../Icons/ETHphoto.png");
+}
+
+.ethName {
+  font-size: 1.3rem;
+  font-size: 0.85vw;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1.1rem;
+}
+
+.ethType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  background-color: #171717;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  padding: 0.5rem 1rem;
+  padding: 0.35vw 0.65vw;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.iconETH {
+  width: 100%;
+}
+
+.typeETHname {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-size: 0.7vw;
+}
+
+.viewBtnArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnView {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  background-image: linear-gradient(90deg, #45cbd8 3.25%, #390f67 89.92%);
+  border-radius: 6px;
+  padding: 1.1rem 4rem;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.458);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btnView:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 0 8px rgba(38, 36, 36, 0.24);
+}
+
+/* Third Section */
+
+.thirdSection {
+  background-color: #280a4a;
+  /* min-height: 100vh; */
+  min-height: 50vw;
+  margin-bottom: 6rem;
+  box-shadow: 0px 5px 15px 9px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.thirdSection::after {
+  content: "";
+  bottom: 0%;
+  right: 30%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(19, 74, 121, 0.76) 0%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+}
+
+.thirdSection::before {
+  content: "";
+  bottom: 0%;
+  left: 40%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    55.17% 55.17% at 50% 50%,
+    rgba(19, 74, 121, 0.76) 0%,
+    rgba(54, 54, 54, 0.0304) 100%
+  );
+}
+
+.featuredCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.5rem;
+}
+
+.featuredHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4.5rem;
+}
+
+.featuredContainer {
+  max-width: 130rem;
+  padding: 0rem 4rem 3rem 4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.longFeatured {
+  min-height: 18.5vw;
+  max-width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.longFeatured:hover {
+  transform: translateY(-4px);
+}
+
+.threeFeatured {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 100%;
+  gap: 3rem;
+}
+
+.featuredSqure {
+  min-height: 18.5vw;
+  max-width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.featuredSqure:hover {
+  transform: translateY(-4px);
+}
+
+/* Fourth Section */
+
+.fourthSection {
+  margin-bottom: 15rem;
+  position: relative;
+}
+
+.fourthSection::after {
+  content: "";
+  bottom: 35%;
+  right: 30%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #aad4f0c4 0%,
+    rgba(187, 227, 255, 0) 100%
+  );
+}
+
+.fourthSection::before {
+  content: "";
+  bottom: 10%;
+  right: 30%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #ff93d7bc 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.newsCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.newsHeading {
+  color: #3f3f46;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.newsContainer {
+  max-width: 130rem;
+  padding: 0rem 4rem 0 4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 3rem;
+}
+
+.newsContainer::after {
+  content: "";
+  bottom: 50%;
+  left: 55%;
+  z-index: -1;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #ff93d7b8 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.newsContainer::before {
+  content: "";
+  bottom: 10%;
+  left: 55%;
+  z-index: -1;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #c0fff4 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.newsThreeFeatured {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  max-width: 100%;
+  gap: 3rem;
+}
+
+.newsThreeSqure {
+  min-height: 18.5vw;
+  max-width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.newsThreeSqure:hover {
+  transform: translateY(-4px);
+}
+
+.newsParagraph {
+  color: #414141;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newsDate {
+  color: #3c3c3c;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.newsSqureArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.newsPhonesSec {
+  min-height: 20vw;
+  max-width: 100%;
+  border-radius: 20px;
+  background-color: rgba(40, 10, 74, 0.3);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  position: relative;
+}
+
+.newsPhonesSec::after {
+  content: "";
+  top: 70%;
+  left: 50%;
+  z-index: -1;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #ffc0c4 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.newsPhonesSec::before {
+  content: "";
+  top: 55%;
+  right: 50%;
+  z-index: -1;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #c0fff5c9 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.halfPhone1 {
+  width: 16vw;
+  position: absolute;
+  top: 50%;
+  right: 55%;
+  transform: translate(50%, -39%);
+}
+
+.halfPhone2 {
+  z-index: -1;
+  width: 13vw;
+  position: absolute;
+  top: 60%;
+  right: 41%;
+  transform: translate(50%, -39%);
+}
+
+.phonesContentCont {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 40rem;
+}
+
+.downloadNFT {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.scanText {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.arrowScan {
+  font-size: 3.3rem;
+  color: #fff;
+}
+
+.scanTextArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 24%;
+}
+
+.urlPlace {
+  background-color: #fff;
+  border-radius: 20px;
+  min-height: 10.5vw;
+  width: 10.5vw;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+  background-color: rgba(40, 10, 74, 0.167);
+}
+
+.scanNFT {
+  margin-top: 7rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nftText {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #414141;
+}
+
+.whiteNify {
+  color: #fff;
+  margin-right: 0.3rem;
+  font-weight: 700;
+}
+
+.nftStoresIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+}
+
+.nftAppleIcon {
+  width: 38%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.nftAppleIcon:hover {
+  transform: translateY(-2px);
+}
+
+.nftPlayIcon {
+  width: 41%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.nftPlayIcon:hover {
+  transform: translateY(-2px);
+}
+
+.nftAppText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+/** Media Quries **/
+
+/** Big Labtops **/
+@media (min-width: 103em) {
+  html {
+    font-size: 66.5%;
+  }
+
+  .heroContent {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    max-width: unset !important;
+    align-items: center;
+    padding: 6rem 18rem 6rem 18rem !important;
+    position: relative;
+  }
+
+  .heroHeading {
+    font-size: 7.3rem;
+    line-height: 7rem;
+  }
+
+  .nifyText {
+    font-weight: 400;
+    font-size: 1.6rem !important;
+    line-height: 1.8rem;
+  }
+
+  .downloadText {
+    font-weight: 600;
+    font-size: 4.5rem !important;
+    line-height: 3.7rem;
+  }
+
+  .downArea {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 1.2rem;
+  }
+
+  .ball2 {
+    top: 40%;
+    right: 26%;
+    transform: translate(0%, 90%);
+    width: 1.4vw;
+  }
+
+  .ball4 {
+    top: 4%;
+    right: 75.5%;
+    transform: translate(0%, 100%);
+    width: 2.3vw;
+
+    z-index: 1;
+  }
+
+  .ball4:hover {
+    transform: rotate(360deg) translate(32.5vw, 8.2vw);
+  }
+
+  .downloadNFT {
+    gap: 2.5rem !important;
+
+    margin-bottom: 3rem;
+  }
+
+  .urlPlace {
+    min-height: 8vw !important;
+    width: 8vw !important;
+  }
+
+  .longFeatured {
+    min-height: 16vw !important;
+  }
+
+  .featuredSqure {
+    min-height: 16vw !important;
+  }
+
+  .newsThreeSqure {
+    min-height: 16vw !important;
+  }
+  .newsPhonesSec {
+    min-height: 16vw !important;
+  }
+
+  .ethName {
+    margin-bottom: 1.8rem !important;
+  }
+
+  .ethType {
+    margin-bottom: 1.4rem !important;
+  }
+}
+
+/* @media (min-width: 128em) {
+  html {
+    font-size: 80%;
+  }
+
+  .urlPlace {
+    min-height: 6vw !important;
+    width: 6vw !important;
+  }
+
+  .newsPhonesSec {
+    min-height: 14vw !important;
+  }
+} */
+/****/
+
+/** Small Labtops **/
+
+@media (max-width: 87em) {
+  .photoETH {
+    gap: 6rem;
+  }
+
+  .heroHeading {
+    font-size: 5.5rem;
+    line-height: 7rem;
+  }
+
+  .downloadText {
+    font-weight: 600;
+    font-size: 3.1rem !important;
+    line-height: 3.7rem;
+  }
+}
+
+@media (max-width: 80em) {
+  .handPhone {
+    bottom: 35%;
+  }
+
+  .circle1 {
+    top: 19%;
+  }
+
+  .circle2 {
+    top: 6%;
+  }
+
+  .ball1 {
+    top: 79.5%;
+  }
+
+  .heroHeading {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+
+  .downloadText {
+    font-size: 2.8rem !important;
+    line-height: 3.7rem;
+  }
+
+  .nifyText {
+    font-size: 1.32rem !important;
+    line-height: 1.8rem;
+  }
+}
+
+/** 1152 px **/
+
+@media (max-width: 72em) {
+  .handPhone {
+    bottom: 31.5%;
+  }
+
+  .circle1 {
+    top: 21%;
+  }
+
+  .circle2 {
+    top: 9%;
+  }
+
+  .ball1 {
+    top: 75.6%;
+  }
+
+  .ball2 {
+    top: 32%;
+  }
+
+  .ball3 {
+    top: 14.5%;
+  }
+
+  .heroHeading {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+
+  .downloadText {
+    font-size: 2.8rem !important;
+    line-height: 3.7rem;
+  }
+
+  .nifyText {
+    font-size: 1.32rem !important;
+    line-height: 1.8rem;
+  }
+}
+
+/****/
+
+/** 1024 **/
+
+@media (max-width: 64em) {
+  .handPhone {
+    bottom: 30%;
+  }
+
+  .circle1 {
+    top: 31%;
+  }
+
+  .circle2 {
+    top: 18%;
+  }
+
+  .ball1 {
+    top: 83%;
+  }
+
+  .ball2 {
+    top: 42%;
+  }
+
+  .ball3 {
+    top: 25%;
+  }
+
+  .heroHeading {
+    font-size: 4.3rem;
+    line-height: 4.5rem;
+  }
+
+  .downloadText {
+    font-size: 2.6rem !important;
+    line-height: 3.7rem;
+  }
+
+  .nifyText {
+    font-size: 1.25rem !important;
+    line-height: 1.8rem;
+  }
+
+  /***/
+
+  .phonesContentCont {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32rem;
+  }
+
+  .downloadNFT {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .scanText {
+    font-size: 1.2rem;
+
+    line-height: 2rem;
+  }
+
+  .arrowScan {
+    font-size: 3rem;
+  }
+
+  .scanTextArea {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 24%;
+  }
+
+  .urlPlace {
+    min-height: 10.5vw;
+    width: 10.5vw;
+  }
+
+  .scanNFT {
+    margin-top: 7rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nftText {
+    font-size: 1.4rem;
+  }
+
+  .whiteNify {
+    margin-right: 0.3rem;
+  }
+
+  .nftStoresIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .nftAppleIcon {
+    width: 32%;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .nftPlayIcon {
+    width: 33%;
+  }
+}
+
+/** 962 px **/
+
+@media (max-width: 60em) {
+  .handPhone {
+    bottom: 28%;
+  }
+
+  .circle1 {
+    top: 33%;
+  }
+
+  .circle2 {
+    top: 21%;
+  }
+
+  .ball1 {
+    top: 81.5%;
+  }
+
+  .ball2 {
+    top: 43%;
+  }
+
+  .ball3 {
+    top: 26%;
+  }
+
+  .heroHeading {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .downloadText {
+    font-size: 2.4rem !important;
+    line-height: 3.7rem;
+  }
+
+  .nifyText {
+    font-size: 1.1rem !important;
+    line-height: 1.8rem;
+  }
+
+  .heroButton {
+    font-size: 1rem;
+  }
+
+  .storesIcon {
+    width: 60%;
+  }
+
+  .storesArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
+
+/** 800 px **/
+
+@media (max-width: 50em) {
+  .handPhone {
+    bottom: 30%;
+  }
+
+  .circle1 {
+    top: 30%;
+  }
+
+  .circle2 {
+    top: 18%;
+  }
+
+  .ball1 {
+    top: 82%;
+  }
+
+  .ball2 {
+    top: 40%;
+  }
+
+  .ball3 {
+    top: 38.5%;
+  }
+
+  .ball4 {
+    top: 15%;
+  }
+
+  .ball5 {
+    top: 87%;
+  }
+
+  .heroHeading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .downloadText {
+    font-size: 2.2rem !important;
+    line-height: 2.5rem;
+  }
+
+  .nifyText {
+    font-size: 1rem !important;
+    line-height: 1.4rem;
+  }
+
+  .heroButton {
+    font-size: 0.8rem;
+  }
+
+  .storesIcon {
+    width: 50%;
+  }
+
+  .storesArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.7rem;
+  }
+
+  .heroContent {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    max-width: unset !important;
+    align-items: center;
+    padding: 2rem 6rem 4rem 6rem !important;
+    position: relative;
+  }
+
+  .secondPlink {
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 0.7rem;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+  }
+
+  .photoETH {
+    gap: 3rem;
+  }
+
+  /** **/
+
+  .phonesContentCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25rem;
+  }
+
+  .downloadNFT {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: -3rem;
+  }
+
+  .scanText {
+    font-size: 1rem;
+
+    line-height: 2rem;
+  }
+
+  .arrowScan {
+    font-size: 2.4rem;
+  }
+
+  .scanTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 25%;
+  }
+
+  .urlPlace {
+    min-height: 10.5vw;
+    width: 10.5vw;
+  }
+
+  .scanNFT {
+    margin-top: 7rem;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 4rem;
+  }
+
+  .nftText {
+    font-size: 1.2rem;
+  }
+
+  .whiteNify {
+    margin-right: 0.3rem;
+  }
+
+  .nftStoresIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .nftAppleIcon {
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .nftPlayIcon {
+    width: 31%;
+  }
+}
+
+@media (max-width: 48em) {
+  .handPhone {
+    bottom: 29%;
+  }
+
+  .circle1 {
+    top: 31%;
+  }
+
+  .circle2 {
+    top: 19%;
+  }
+
+  .ball1 {
+    top: 81%;
+  }
+
+  .ethType {
+    padding: 0.15vw 0.6vw;
+  }
+
+  .iconETH {
+    width: 25% !important;
+  }
+}
+
+/** 600 px **/
+
+@media (max-width: 37.5em) {
+  .handPhone {
+    bottom: 25.5%;
+  }
+
+  .circle1 {
+    top: 40%;
+  }
+
+  .circle2 {
+    top: 30%;
+  }
+
+  .ball1 {
+    top: 84%;
+  }
+
+  .ball2 {
+    top: 49%;
+  }
+
+  .ball3 {
+    top: 35%;
+  }
+
+  .ball4 {
+    top: 15%;
+  }
+
+  .ball5 {
+    top: 87%;
+  }
+
+  .ethName {
+    font-size: 1.2vw;
+  }
+
+  .heroHeading {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+
+  .downloadText {
+    font-size: 1.8rem !important;
+    line-height: 2.5rem;
+  }
+
+  .nifyText {
+    font-size: 0.7rem !important;
+    line-height: 1.2rem;
+  }
+
+  .heroButton {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .storesIcon {
+    width: 40%;
+  }
+
+  .storesArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+  }
+
+  .heroContent {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    max-width: unset !important;
+    align-items: center;
+    padding: 2rem 5rem 4rem 5rem !important;
+    position: relative;
+  }
+
+  .secondPlink {
+    font-size: 1.2rem;
+  }
+
+  .photoETH {
+    gap: 2rem;
+  }
+
+  .ethType {
+    padding: 0.3vw 0.5vw !important;
+  }
+
+  /** **/
+
+  .phonesContentCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+  }
+
+  .downloadNFT {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -3rem;
+  }
+
+  .scanText {
+    font-size: 0.8rem;
+
+    line-height: 2rem;
+  }
+
+  .arrowScan {
+    font-size: 2.2rem;
+  }
+
+  .scanTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem;
+    max-width: 25%;
+  }
+
+  .urlPlace {
+    min-height: 10.5vw;
+    width: 10.5vw;
+  }
+
+  .scanNFT {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nftText {
+    font-size: 0.8rem;
+  }
+
+  .whiteNify {
+    margin-right: 0.3rem;
+  }
+
+  .nftStoresIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nftAppleIcon {
+    width: 35%;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .nftPlayIcon {
+    width: 36%;
+  }
+
+  .halfPhone1 {
+    top: 60%;
+    right: 55%;
+    transform: translate(50%, -39%);
+  }
+
+  .halfPhone2 {
+    top: 70%;
+    right: 41%;
+    transform: translate(50%, -39%);
+  }
+
+  .newsParagraph {
+    font-size: 1rem;
+  }
+
+  .newsDate {
+    font-size: 1rem;
+  }
+}
+
+/******** Quries for all phonse ********/
+/******** Quries for all phonse ********/
+
+/** 512x896 Big phones **/
+@media (max-width: 32em) {
+  .mainHeader {
+    min-height: 170vw !important;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
+    z-index: 0 !important;
+    position: relative !important;
+  }
+
+  .mainHeader::after {
+    top: 31%;
+    right: 65%;
+    transform: rotate(90deg) !important;
+  }
+
+  .mainHeader::before {
+    top: -33%;
+    right: 70%;
+    transform: rotate(90deg);
+    background: radial-gradient(
+      55.17% 55.17% at 50% 50%,
+      rgba(127, 9, 135, 0.573) 0%,
+      rgba(172, 172, 172, 0) 100%
+    );
+  }
+
+  .heroContent {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr !important;
+    max-width: unset !important;
+    padding: 9rem 3rem 0rem 2.8rem !important;
+    row-gap: 6.5rem !important;
+    position: relative;
+  }
+
+  .heroContent::after {
+    left: 65%;
+  }
+
+  .heroContent::before {
+    content: "";
+    top: 53%;
+    left: 56%;
+    transform: rotate(270deg);
+  }
+
+  .heroHeading {
+    font-size: 8.5vw;
+    line-height: 9.6vw;
+    font-weight: 600;
+  }
+
+  .downloadText {
+    font-size: 6.9vw !important;
+    line-height: 8vw;
+    font-weight: 600;
+  }
+
+  .nifyText {
+    font-size: 4vw !important;
+    line-height: 5.7vw;
+  }
+
+  .storesIcon {
+    width: 33vw;
+  }
+
+  .storesArea {
+    gap: 2.2vw;
+  }
+
+  .nifyArea {
+    max-width: 65vw;
+  }
+
+  .twoButton {
+    margin-top: 0.8vw !important;
+    gap: 3vw;
+  }
+
+  .heroButton {
+    font-size: 3.1vw;
+    font-weight: 500 !important;
+    border-radius: 6px;
+    padding: 2.8vw 3vw;
+    filter: unset !important;
+  }
+
+  .heroButton2 {
+    filter: unset !important;
+    background-image: linear-gradient(
+      90deg,
+      #64a0c3 0%,
+      rgba(233, 70, 179, 0) 111.38%
+    );
+  }
+
+  .handPhone {
+    position: absolute;
+    width: 60vw;
+    transform: translate(50%, 50%);
+    bottom: 36.3vw;
+    right: 64.5vw;
+  }
+
+  .circle1 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .circle2 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .heroDownload {
+    gap: 3.5rem;
+  }
+
+  /** Balls **/
+
+  .ball1 {
+    width: 7.7vw;
+    top: 10.5%;
+    right: 11%;
+  }
+
+  .ball2 {
+    top: 28%;
+    right: 20%;
+    width: 5.2vw;
+  }
+
+  .ball3 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ball4 {
+    top: 89%;
+    right: 30%;
+    width: 5.7vw;
+  }
+
+  .ball4:hover {
+    transform: rotate(360deg) translate(25vw, 6.8vw);
+  }
+
+  .ball5 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ball6 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .firstSection {
+    padding-bottom: 5rem;
+  }
+
+  /** Second Section **/
+  .secondPageLinks {
+    gap: 8vw !important;
+    justify-content: center;
+    margin-bottom: 3.2rem;
+    margin-right: unset;
+  }
+
+  .secondPlink {
+    font-size: 3.35vw;
+    text-align: center !important;
+    padding-bottom: 0.7rem !important;
+  }
+
+  .secondPlinkNew {
+    margin-right: 10vw;
+  }
+
+  .secondPlinkComing {
+    margin-left: -6vw;
+    margin-right: 4vw;
+  }
+
+  .areaETH {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: unset !important;
+    max-width: unset !important;
+    padding: 0rem 0rem 0rem 3rem !important;
+    gap: unset !important;
+    column-gap: 0rem !important;
+    row-gap: 2.5rem !important;
+  }
+
+  .photoETH {
+    height: 45vw;
+    width: 43.3vw;
+    border-radius: 1.3rem;
+    gap: 9.5rem !important;
+    gap: 15vw !important;
+  }
+
+  .photoETHend {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ethName {
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .ethType {
+    gap: 0.8rem;
+    background-color: #171717;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    padding: 0.5rem 1rem;
+    padding: 1vw 2vw !important;
+    border-radius: 5px;
+    margin-bottom: 1.3rem;
+  }
+
+  .iconETH {
+    width: 1.8vw !important;
+  }
+
+  .typeETHname {
+    font-size: 2.4vw;
+  }
+
+  .btnView {
+    font-size: 3.4vw;
+    font-weight: 400;
+    padding: 2vw 7.5vw;
+  }
+
+  /** Section three **/
+
+  .thirdSection {
+    min-height: 140vw !important;
+  }
+
+  .threeFeatured {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .featuredSqure {
+    min-height: 32vw;
+  }
+
+  .featuredSqureLast {
+    grid-column: 1 / 3;
+    width: 45vw;
+    margin-left: 22.5vw;
+    margin-top: -2rem;
+  }
+
+  .featuredHeading {
+    font-size: 3.8vw;
+    font-weight: 500;
+  }
+
+  .featuredContainer {
+    max-width: unset !important;
+    padding: 0rem 3rem 0rem 2.8rem !important;
+    gap: 2.5rem;
+  }
+
+  .longFeatured {
+    min-height: 40vw;
+  }
+
+  /** Forth Section **/
+
+  .fourthSection {
+    margin-bottom: 10rem;
+  }
+
+  .newsHeading {
+    color: #3f3f46;
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  .newsContainer {
+    max-width: unset !important;
+    padding: 0rem 3rem 0rem 2.8rem !important;
+    margin-top: 4rem;
+    gap: 6rem;
+  }
+
+  .newsThreeFeatured {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .newsThreeSqure {
+    min-height: 60vw;
+  }
+
+  .newsParagraph {
+    font-size: 3.85vw;
+  }
+
+  .newsDate {
+    font-size: 3.6vw;
+  }
+
+  .newsSqureArea {
+    gap: 3rem;
+  }
+
+  /**** Phone ****/
+
+  .newsPhonesSec {
+    min-height: 46vw !important;
+    max-width: 100%;
+  }
+
+  .halfPhone1 {
+    width: 28vw;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -10%);
+  }
+
+  .halfPhone2 {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .phonesContentCont {
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10rem !important;
+  }
+
+  .downloadNFT {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  .scanText {
+    font-size: 3.2vw;
+    font-weight: 600;
+    line-height: 2.3rem;
+  }
+
+  .arrowScan {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .scanTextArea {
+    align-items: flex-end !important;
+    max-width: 24%;
+    margin-right: 2rem;
+  }
+
+  .urlPlace {
+    min-height: 21vw;
+    width: 21vw;
+    order: 1;
+  }
+
+  /***/
+  .scanNFT {
+    margin-top: unset !important;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: flex-end !important;
+    margin-bottom: 3.5rem;
+  }
+
+  .nftText {
+    font-size: 3vw;
+    font-weight: 500;
+  }
+
+  .whiteNify {
+    margin-right: 0.5rem;
+  }
+
+  .nftStoresIcon {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nftAppleIcon {
+    width: 22vw;
+  }
+
+  .nftPlayIcon {
+    width: 22vw;
+  }
+
+  .nftAppText {
+    flex-direction: column;
+    gap: unset !important;
+    max-width: 22vw;
+  }
+}
+
+/** 480 **/
+
+@media (max-width: 30em) {
+  .twoButton {
+    margin-top: 0.6vw !important;
+    gap: 5vw;
+  }
+
+  .heroButton {
+    font-size: 3vw;
+    font-weight: 500 !important;
+    border-radius: 6px;
+    padding: 2.8vw 2.9vw;
+    filter: unset !important;
+  }
+
+  .nifyArea {
+    max-width: 70vw;
+  }
+}
+
+/** 460 **/
+
+@media (max-width: 28.75em) {
+  .nifyText {
+    font-size: 3.8vw !important;
+    line-height: 5vw;
+  }
+  .ball1 {
+    width: 7vw;
+    top: 14%;
+    right: 11%;
+  }
+
+  .ball2 {
+    top: 25%;
+    right: 10% !important;
+    width: 5vw;
+  }
+
+  .ball4 {
+    top: 89%;
+    right: 30%;
+    width: 5.7vw;
+  }
+  .twoButton {
+    margin-top: 1vw !important;
+    gap: 4.5vw;
+  }
+
+  .heroButton {
+    font-size: 2.9vw;
+    font-weight: 600;
+    padding: 2.6vw 2.5vw;
+  }
+  .nifyArea {
+    max-width: 65vw;
+  }
+}
+
+/** 430 **/
+
+@media (max-width: 27em) {
+  .nifyArea {
+    max-width: 65vw;
+  }
+  .ball1 {
+    width: 7vw;
+    top: 14%;
+    right: 11%;
+  }
+
+  .ball2 {
+    top: 25%;
+    right: 10% !important;
+    width: 5vw;
+  }
+
+  .ball4 {
+    top: 89%;
+    right: 30%;
+    width: 5.7vw;
+  }
+
+  .twoButton {
+    margin-top: 2vw !important;
+    gap: 2.5vw;
+  }
+
+  .heroButton {
+    font-size: 2.8vw;
+    font-weight: 600 !important;
+    padding: 2.6vw 2.6vw;
+  }
+}
+
+/*** 416 ***/
+@media (max-width: 26em) {
+  .nifyArea {
+    max-width: 65vw;
+  }
+
+  .ball1 {
+    width: 7vw;
+    top: 14%;
+    right: 11%;
+  }
+
+  .ball2 {
+    top: 25%;
+    right: 10% !important;
+    width: 5vw;
+  }
+
+  .ball4 {
+    top: 89%;
+    right: 30%;
+    width: 5.7vw;
+  }
+  .twoButton {
+    margin-top: 1.2vw !important;
+    gap: 2.5vw;
+  }
+
+  .heroButton {
+    font-size: 2.7vw;
+    padding: 2.8vw 3vw;
+    font-weight: 600 !important;
+  }
+}
+
+/*** 390 **/
+
+@media (max-width: 25em) {
+  .ball4 {
+    top: 88%;
+  }
+
+  .areaETH {
+    padding: 0rem 0rem 0rem 2rem !important;
+    row-gap: 2rem !important;
+  }
+
+  .twoButton {
+    margin-top: 0.3vw !important;
+    gap: 2.5vw;
+  }
+
+  .heroButton {
+    font-size: 2.8vw;
+    padding: 2.7vw 3vw;
+  }
+
+  .nifyText {
+    font-size: 3.8vw !important;
+    line-height: 5vw;
+    font-weight: 400;
+  }
+}
+
+/** 375 **/
+
+@media (max-width: 24.5em) {
+  .ball4 {
+    top: 91%;
+  }
+
+  .heroButton {
+    font-size: 2.7vw;
+    padding: 2.6vw 2.7vw;
+  }
+  .nifyArea {
+    max-width: 65vw;
+  }
+
+  .nifyText {
+    font-size: 3.8vw !important;
+    line-height: 5vw;
+    font-weight: 400;
+  }
+}
+
+/** 360 **/
+
+@media (max-width: 22.5em) {
+  .ball4 {
+    top: 88%;
+  }
+
+  .ball2 {
+    top: 23%;
+  }
+
+  .twoButton {
+    margin-top: 1vw !important;
+    gap: 3vw;
+  }
+
+  .heroButton {
+    font-size: 2.8vw;
+    padding: 2.2vw 3vw;
+  }
+
+  .ball4 {
+    top: 89%;
+    right: 30%;
+    width: 5vw;
+  }
+
+  .nifyArea {
+    max-width: 65vw;
+  }
+
+  .nifyText {
+    font-size: 3.8vw !important;
+    line-height: 5vw;
+    font-weight: 400;
+  }
+}
+
+/** 336px **/
+
+@media (max-width: 21em) {
+  .ball1 {
+    top: 13%;
+  }
+
+  .ball4 {
+    top: 90%;
+  }
+
+  .heroButton {
+    padding: 2.8vw 2.4vw;
+  }
+
+  .halfPhone1 {
+    width: 28vw;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -3%);
+  }
+
+  .twoButton {
+    margin-top: -1.5vw !important;
+    gap: 4.5vw;
+  }
+
+  .heroButton {
+    font-size: 3vw;
+    padding: 2.2vw 2.5vw;
+  }
+
+  .ball4 {
+    top: 93%;
+    right: 27%;
+    width: 4vw;
+  }
+}

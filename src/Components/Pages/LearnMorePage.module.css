@@ -1,0 +1,529 @@
+.mainHeaderResult {
+  background-color: #27084a;
+  min-height: 22vw;
+  box-shadow: 0px 5px 15px 9px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mainHeaderResult::after {
+  content: "";
+  bottom: 60%;
+  right: -3%;
+  width: 30%;
+  z-index: -1;
+  height: 50%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(127, 9, 135, 0.492) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.mainHeaderResult::before {
+  content: "";
+  bottom: 0%;
+  right: 25%;
+  width: 60%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(127, 9, 135, 0.715) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.firstSection {
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+.ball1 {
+  position: absolute;
+  width: 1.2vw;
+  top: 80%;
+  right: 75%;
+  transform: translate(28%, 90%);
+}
+
+.ball2 {
+  position: absolute;
+  top: 45%;
+  right: 22%;
+  transform: translate(0%, 90%);
+  width: 1.4vw;
+}
+
+.ball4 {
+  position: absolute;
+  top: 24%;
+  right: 80%;
+  transform: translate(0%, 100%);
+  width: 2.3vw;
+  transition: all 3s;
+  z-index: 1;
+}
+
+.ball5 {
+  position: absolute;
+  top: 60%;
+  right: 90%;
+  z-index: 1;
+  width: 1.7vw;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball6 {
+  position: absolute;
+  top: 80%;
+  right: 25%;
+  width: 1.5vw;
+  z-index: 1;
+  transform: translate(0%, 100%);
+  transition: all 4s;
+}
+
+.ball8 {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  transform: translate(0%, 100%);
+  width: 2vw;
+}
+
+.ball9 {
+  position: absolute;
+  top: 70%;
+  right: 42%;
+  transform: translate(0%, 100%);
+  width: 2.2vw;
+  transition: all 3s;
+  z-index: 1;
+}
+
+.ball10 {
+  position: absolute;
+  top: 20%;
+  right: 60%;
+  transform: translate(0%, 100%);
+  width: 2vw;
+}
+
+.newsHeading {
+  margin-top: 7.5rem;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #e1d6e9;
+}
+
+.headingArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headingArea::after {
+  content: "";
+  bottom: -22%;
+  right: 40%;
+  width: 100%;
+  z-index: -1;
+  height: 130%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(19, 73, 121, 0.54) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.headingArea::before {
+  content: "";
+  bottom: -75%;
+  right: -35%;
+  width: 100%;
+  z-index: -1;
+  height: 130%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    rgba(19, 73, 121, 0.567) 0.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+.PrivacyContainer {
+  margin: 0 auto;
+  padding: 0rem 8rem 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacyHeadings {
+  font-size: 3rem;
+  color: #fafafa;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.privacyHeadings::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -14%;
+  left: -6%;
+  height: 125%;
+  width: 85%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-45deg);
+  background: linear-gradient(90deg, #6e0202 3.25%, #2b1256 89.92%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.348);
+}
+
+.privacySpan {
+  font-size: 1.7rem;
+  color: #27272a;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 2.7rem;
+}
+
+/*Second Section*/
+
+.secondSection {
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.secondSection::after {
+  content: "";
+  top: 5%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    42.29% 42.29% at 47.19% 52.55%,
+    #d7c8f540 0%,
+    rgba(187, 227, 255, 0) 100%
+  );
+}
+
+.secondSection::before {
+  content: "";
+  bottom: 35%;
+  right: 30%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    49.96% 49.96% at 50.04% 50.04%,
+    #d9dbf333 8.33%,
+    rgba(239, 220, 244, 0) 100%
+  );
+}
+
+/** Media Quries **/
+
+/** Big Labtops **/
+@media (min-width: 103em) {
+  html {
+    font-size: 66.5%;
+  }
+
+  .newsHeading {
+    margin-top: 10rem;
+    font-size: 7rem;
+  }
+
+  .privacyHeadings {
+    font-size: 4rem;
+  }
+
+  .privacySpan {
+    font-size: 2.2rem;
+  }
+  .privacyUl {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 128em) {
+  html {
+    font-size: 80%;
+  }
+}
+/****/
+
+/** Small Labtops **/
+
+@media (max-width: 79em) {
+  .newsHeading {
+    margin-top: 4vw;
+    font-size: 4vw;
+  }
+
+  .privacyHeadings {
+    font-size: 2.5vw;
+  }
+
+  .privacySpan {
+    font-size: 1.5vw;
+  }
+  .privacyUl {
+    font-size: 1.5vw;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 95%;
+  }
+}
+
+/** 1152 px **/
+
+@media (max-width: 72em) {
+  .newsHeading {
+    margin-top: 4vw;
+    font-size: 4vw;
+  }
+
+  .privacyHeadings {
+    font-size: 2.5vw;
+  }
+
+  .privacySpan {
+    font-size: 1.5vw;
+  }
+  .privacyUl {
+    font-size: 1.5vw;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 95%;
+  }
+}
+
+/****/
+
+/** 1024 **/
+
+@media (max-width: 64em) {
+  .newsHeading {
+    margin-top: 4vw;
+    font-size: 4vw;
+  }
+
+  .privacyHeadings {
+    font-size: 2.5vw;
+  }
+
+  .privacySpan {
+    font-size: 1.6vw;
+  }
+  .privacyUl {
+    font-size: 1.6vw;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 98% !important;
+  }
+}
+
+/** 962 px **/
+
+@media (max-width: 60em) {
+  .newsHeading {
+    margin-top: 0rem;
+    font-size: 3rem;
+  }
+}
+
+/** 800 px **/
+
+@media (max-width: 50em) {
+  .newsHeading {
+    margin-top: -1vw;
+    font-size: 4vw;
+  }
+
+  .privacyHeadings {
+    font-size: 2.7vw;
+  }
+
+  .privacySpan {
+    font-size: 1.8vw;
+  }
+  .privacyUl {
+    font-size: 1.8vw;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 105% !important;
+  }
+}
+
+@media (max-width: 40em) {
+  .newsHeading {
+    margin-top: -1vw;
+    font-size: 4vw;
+  }
+
+  .privacyHeadings {
+    font-size: 3vw;
+  }
+
+  .privacySpan {
+    font-size: 2vw;
+  }
+  .privacyUl {
+    font-size: 2vw;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 105% !important;
+  }
+}
+
+/******** Quries for all phonse ********/
+/******** Quries for all phonse ********/
+
+/** 512x896 Big phones **/
+@media (max-width: 32em) {
+  .mainHeaderResult {
+    min-height: 63vw;
+    position: relative;
+  }
+
+  .PrivacyContainer {
+    margin: 0 auto;
+    padding: 0rem 4vw 0rem 6vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .privacyHeadings::after {
+    height: 125%;
+    width: 95% !important;
+  }
+
+  .newsHeading {
+    margin-top: 15rem;
+
+    font-size: 8vw;
+  }
+
+  .privacyHeadings {
+    font-size: 5vw;
+    margin-bottom: 8vw;
+  }
+
+  .privacySpan {
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+  .privacyUl {
+    font-size: 3.2vw;
+  }
+
+  .ball1 {
+    width: 5vw !important;
+    top: 72% !important;
+  }
+
+  .ball2 {
+    top: 37% !important;
+    width: 4vw;
+  }
+
+  .ball4 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .ball5 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .ball8 {
+    top: 38% !important;
+    right: 45% !important;
+    width: 3vw;
+  }
+
+  .ball6 {
+    top: 75% !important;
+    right: 25% !important;
+    width: 3vw;
+  }
+
+  .ball9 {
+    top: 80% !important;
+    width: 3vw !important;
+  }
+
+  .ball10 {
+    position: absolute;
+    top: 30% !important;
+    right: 73% !important;
+    transform: translate(0%, 100%);
+    width: 4vw;
+  }
+}
+
+/** 414 **/
+
+@media (max-width: 26em) {
+  .newsHeading {
+    margin-top: 12rem;
+    font-size: 5rem;
+    font-size: 7.3vw;
+  }
+}
+
+/*** 390 **/
+/* 
+  @media (max-width: 25em) {
+  } */
+
+/** 375 **/
+
+/* @media (max-width: 24.5em) {
+  } */
+
+/** 360 **/
+
+@media (max-width: 22.5em) {
+  .newsHeading {
+    margin-top: 10rem;
+  }
+}
+
+/** 320px **/
+
+@media (max-width: 22.5em) {
+  .newsHeading {
+    margin-top: 8.5rem;
+  }
+}
